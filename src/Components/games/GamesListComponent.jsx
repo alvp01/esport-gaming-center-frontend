@@ -16,6 +16,7 @@ function GamesListComponent() {
       const response = await axios.get(`${process.env.REACT_APP_BASE_API_URL}/api/games`);
       setGames(response.data);
     } catch (error) {
+      console.error(error);
     }
   };
 
