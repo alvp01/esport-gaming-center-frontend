@@ -24,7 +24,6 @@ function ReservationForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(auth().userId);
 
     const reservationData = {
       reservation: {
@@ -50,12 +49,8 @@ function ReservationForm() {
 
       if (response.ok) {
         navigate('/reservations');
-      } else {
-        const errorData = await response.json();
-        console.error('Error creating reservation:', errorData);
       }
     } catch (error) {
-      console.error('Error creating reservation:', error);
     }
   };
 

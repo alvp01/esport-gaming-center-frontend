@@ -40,11 +40,8 @@ function Login() {
         });
 
         navigate('/games');
-      } else {
-        console.error('Login Error:', data);
       }
     } catch (error) {
-      console.error('Login Error:', error);
     }
   };
 

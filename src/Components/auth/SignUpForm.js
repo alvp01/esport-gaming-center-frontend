@@ -13,7 +13,6 @@ function Register() {
     event.preventDefault();
 
     if (password !== passwordConfirmation) {
-      console.error('Passwords do not match');
       return;
     }
 
@@ -34,14 +33,9 @@ function Register() {
 
       if (response.ok) {
         const data = await response.json();
-        console.log('Successful registration:', data);
         navigate('/login');
-      } else {
-        const errorData = await response.json();
-        console.error('Registration error:', errorData);
       }
     } catch (error) {
-      console.error('Registration error:', error);
     }
   };
 

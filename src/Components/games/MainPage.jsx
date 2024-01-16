@@ -14,7 +14,7 @@ function MainPage() {
 
   useEffect(() => {
     dispatch(fetchGames(auth().userEmail, header().split(' ')[1]));
-  }, [dispatch]);
+  }, [dispatch, auth, header]);
 
   return (
     <>
