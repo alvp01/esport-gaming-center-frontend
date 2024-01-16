@@ -13,7 +13,7 @@ function GamesListComponent() {
 
   const fetchGames = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/games');
+      const response = await axios.get(`${process.env.REACT_APP_BASE_API_URL}/api/games`);
       setGames(response.data);
     } catch (error) {
       console.error(error);
@@ -27,7 +27,7 @@ function GamesListComponent() {
   const deleteGame = async (gameId, event) => {
     event.stopPropagation();
     try {
-      await axios.delete(`http://localhost:3000/api/games/${gameId}`);
+      await axios.delete(`${process.env.BASE_API_URL}/api/games/${gameId}`);
       fetchGames();
     } catch (error) {
       console.error(error);

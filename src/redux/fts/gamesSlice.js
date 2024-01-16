@@ -11,7 +11,7 @@ const initialState = {
 
 // Asumiendo que tienes una ruta en Rails configurada como '/api/games'
 export const fetchGames = createAsyncThunk('games/fetchGames', async (email, auth) => {
-  const url = 'http://127.0.0.1:3000/api/games'; // URL actualizada para el espacio de nombres 'api'
+  const url = `${process.env.REACT_APP_BASE_API_URL}/api/games`;
   try {
     const response = await axios.get(url, {
       headers: {
@@ -27,7 +27,7 @@ export const fetchGames = createAsyncThunk('games/fetchGames', async (email, aut
 
 // Asumiendo que tienes una ruta en Rails configurada como '/api/games/:id'
 export const fetchGameById = createAsyncThunk('games/fetchGameById', async (gameId, email, auth) => {
-  const url = `http://127.0.0.1:3000/api/games/${gameId}`;
+  const url = `${process.env.BASE_API_URL}/api/games/${gameId}`;
   try {
     const response = await axios.get(url, {
       headers: {

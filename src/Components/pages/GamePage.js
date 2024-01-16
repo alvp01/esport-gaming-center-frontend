@@ -7,7 +7,7 @@ function GamePage() {
   useEffect(() => {
     const fetchGames = async () => {
       try {
-        const response = await fetch('http://localhost:3000/games');
+        const response = await fetch( process.env.REACT_APP_BASE_API_URL + '/games');
         const data = await response.json();
 
         if (response.ok) {

@@ -13,7 +13,7 @@ function Login() {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/users/sign_in', {
+      const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/users/sign_in`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

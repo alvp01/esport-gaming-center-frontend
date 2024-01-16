@@ -17,7 +17,7 @@ const Reservations = () => {
 
   const fetchReservations = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/reservations?user_id=' + userId.toString(), {
+      const response = await fetch(process.env.REACT_APP_BASE_API_URL + '/api/reservations?user_id=' + userId.toString(), {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const Reservations = () => {
   const handleUpdate = async (event, id) => {
     event.preventDefault();
     try {
-      const response = await fetch(`http://localhost:3000/api/reservations/${id}`, {
+      const response = await fetch(process.env.REACT_APP_BASE_API_URL + `/api/reservations/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const Reservations = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/reservations/${id}`, {
+      const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/api/reservations/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

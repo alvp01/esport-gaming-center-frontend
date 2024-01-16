@@ -25,7 +25,7 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
-      await axios.delete('http://localhost:3000/users/sign_out', {
+      await axios.delete(`${process.env.REACT_APP_BASE_API_URL}/users/sign_out`, {
         headers: {
           'Content-Type': 'application/json',
         },

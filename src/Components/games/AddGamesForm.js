@@ -16,7 +16,7 @@ function AddGameForm() {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/games', {
+      const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/api/games`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

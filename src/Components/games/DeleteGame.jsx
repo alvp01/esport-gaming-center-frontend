@@ -7,7 +7,7 @@ function DeleteGame({ gameId, onDeleteGame }) {
   const header = useAuthHeader();
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/games/${gameId}`, {
+      const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/games/${gameId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

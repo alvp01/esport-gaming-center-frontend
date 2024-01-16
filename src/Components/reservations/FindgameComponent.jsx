@@ -6,7 +6,7 @@ function FindGameComponent({ handleFormChange }) {
 
   const fetchGames = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/games');
+      const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/api/games`);
       const data = await response.json();
       if (response.ok) {
         setGames(data);
