@@ -12,8 +12,6 @@ function GamePage() {
 
         if (response.ok) {
           setGames(data);
-        } else {
-          console.error('Error fetching games:', data);
         }
       } catch (error) {
         console.error('Error fetching games:', error);
@@ -31,8 +29,6 @@ function GamePage() {
 
       if (response.ok) {
         setGames((prevGames) => prevGames.filter((game) => game.id !== deletedGameId));
-      } else {
-        console.error('Error deleting game on the backend');
       }
     } catch (error) {
       console.error('Error deleting game:', error);

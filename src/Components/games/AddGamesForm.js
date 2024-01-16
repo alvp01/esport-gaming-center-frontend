@@ -34,10 +34,7 @@ function AddGameForm() {
       });
 
       if (response.ok) {
-        console.log('Game added successfully');
         navigate('/gamelist');
-      } else {
-        console.error('Error adding game');
       }
     } catch (error) {
       console.error('Error adding game:', error);

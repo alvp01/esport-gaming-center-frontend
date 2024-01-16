@@ -17,7 +17,6 @@ function ReservationForm() {
 
   useEffect(() => {
     if (!userId) {
-      console.log('Please log in to make a reservation.');
       navigate('/login');
     }
   }, [userId, navigate]);
@@ -51,6 +50,7 @@ function ReservationForm() {
         navigate('/reservations');
       }
     } catch (error) {
+      console.error('Error creating reservation:', error);
     }
   };
 

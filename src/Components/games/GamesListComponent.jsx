@@ -29,6 +29,7 @@ function GamesListComponent() {
       await axios.delete(`${process.env.BASE_API_URL}/api/games/${gameId}`);
       fetchGames();
     } catch (error) {
+      console.error(error);
     }
   };
 

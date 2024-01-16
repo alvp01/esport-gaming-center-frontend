@@ -17,10 +17,10 @@ function DeleteGame({ gameId, onDeleteGame }) {
       });
 
       if (response.ok) {
-        console.log('Game deleted successfully');
         onDeleteGame(gameId);
       }
     } catch (error) {
+      console.error('Error deleting game:', error);
     }
   };
 

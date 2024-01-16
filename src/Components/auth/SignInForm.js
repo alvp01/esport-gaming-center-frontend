@@ -42,6 +42,7 @@ function Login() {
         navigate('/games');
       }
     } catch (error) {
+      console.error('Login Error:', error);
     }
   };
 

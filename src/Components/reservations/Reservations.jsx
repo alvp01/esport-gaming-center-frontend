@@ -26,8 +26,6 @@ const Reservations = () => {
       const data = await response.json();
       if (response.ok) {
         setReservations(data);
-      } else {
-        console.error('Error fetching reservations:', data);
       }
     } catch (error) {
       console.error('Error fetching reservations:', error);
@@ -57,8 +55,6 @@ const Reservations = () => {
       if (response.ok) {
         setReservations(reservations.map((reservation) => (reservation.id === id ? updatedReservation : reservation)));
         setEditingId(null);
-      } else {
-        console.error('Error updating reservation:', updatedReservation);
       }
     } catch (error) {
       console.error('Error updating reservation:', error);
@@ -75,8 +71,6 @@ const Reservations = () => {
       });
       if (response.ok) {
         setReservations(reservations.filter((reservation) => reservation.id !== id));
-      } else {
-        console.error('Error deleting reservation');
       }
     } catch (error) {
       console.error('Error deleting reservation:', error);

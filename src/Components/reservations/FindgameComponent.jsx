@@ -10,8 +10,6 @@ function FindGameComponent({ handleFormChange }) {
       const data = await response.json();
       if (response.ok) {
         setGames(data);
-      } else {
-        console.error('Error fetching games:', data);
       }
     } catch (error) {
       console.error('Error fetching games:', error);

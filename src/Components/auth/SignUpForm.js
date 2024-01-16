@@ -32,10 +32,10 @@ function Register() {
       });
 
       if (response.ok) {
-        const data = await response.json();
         navigate('/login');
       }
     } catch (error) {
+      console.error('Registration error:', error);
     }
   };
 
