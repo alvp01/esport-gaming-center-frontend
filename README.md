@@ -8,18 +8,15 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖🚗 Esport Gaming Center App ](#-luxury-speedsters-app-)
+- [📖🚗 Esport Gaming Center App ](#-esport-gaming-center-app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [🎫 Kanban Board ](#-kanban-board-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -78,13 +75,6 @@ Click on the [link](https://github.com/alvp01/esports-gaming-center-backend) to 
 - **Details of every game in db**
 - **Log in and Sign up feature**
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-[Under Construction](TBA) 💻📲
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
