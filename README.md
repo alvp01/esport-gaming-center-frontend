@@ -12,7 +12,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🎫 Kanban Board ](#-kanban-board-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -77,15 +76,6 @@ Click on the [link](https://github.com/alvp01/esports-gaming-center-backend) to 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🎫 Kanban Board <a name="kanban-board"></a>
-
-- [Link to Kanban Board.](https://github.com/users/cancelei/projects/7)
-- [Initial state of the Kanban Board.](https://github.com/cancelei/EsportGamingCenter_backend/assets/45726631/17119158-dc80-416e-a44a-8fc5b4b205c3)
-- *We are 5 members in our Team.*
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
